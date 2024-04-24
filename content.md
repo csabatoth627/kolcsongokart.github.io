@@ -2,8 +2,7 @@
 
 ## About Kolcsongokart.hu
 
-Pedálos gokartok hajtása egészséges, élvezetes, örömteli mozgás! 
-
+Pedálos gokartok hajtása egészséges, élvezetes, örömteli mozgás!
 
 ## Branding
 
@@ -42,3 +41,6 @@ Kérd ajánlatunkat emailben vagy az alábbi űrlap segítségével.
 Telephely: Sződliget / Vác
 Tel: +36 70 329 7957
 Email: gokartpark@gokartpark.hu
+
+Ha szeretnétek egészséges, élményekben gazdag, emlékezetes programot szervezni, akkor mindenképpen ajánljuk kiváló
+minőségű, pedállal hajtható gokartjainkat bérlésre!
