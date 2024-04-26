@@ -40,8 +40,8 @@ GOKART
 - Primary: #37b24d
 - Tints:
 #ebf7ed
-#fae5d3
-#eb984e
+#d7f0db
+#5fc171
 
 - Shades: 
 #32a045
@@ -197,6 +197,27 @@ body {
 .btn--outline:active {
   background-color: #ebf7ed;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #37b24d;
 }
 
 /* HELPER/SETTINGS CLASSES */
