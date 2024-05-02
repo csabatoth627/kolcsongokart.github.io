@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <title>Kolcsongokart.hu</title>
   </head>
@@ -34,6 +35,11 @@
           <li><a class="main-nav-link nav-cta" href="#">Kapcsolat</a></li>
         </ul>
       </nav>
+
+        <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -69,6 +75,7 @@
         <div class="container grid grid--2-cols">
           <div class="about-video-box">
             <iframe
+              class="about-video"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/fuEHyT41kgM?si=VxwG-0SjhAXJ-om7"
@@ -344,7 +351,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container grid grid--2-cols">
+      <div class="container grid grid--footer">
         <div class="logo-coll">
           <a class="brand" href="#">
             <img class="logo" alt="Kolcsongokart.hu logo" src="img/logo.png" />
@@ -352,7 +359,9 @@
           </a>
           <ul class="social-links">
             <li>
-              <a class="footer-link" href="https://www.instagram.com/kolcsongokart.hu/?hl=en"
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/kolcsongokart.hu/?hl=en"
                 ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
               ></a>
             </li>
@@ -362,7 +371,9 @@
               ></a>
             </li>
             <li>
-              <a class="footer-link" href="https://www.youtube.com/@kolcsongokart"
+              <a
+                class="footer-link"
+                href="https://www.youtube.com/@kolcsongokart"
                 ><ion-icon class="social-icon" name="logo-youtube"></ion-icon
               ></a>
             </li>
@@ -376,9 +387,7 @@
         <div class="address-coll">
           <p class="footer-heading">Kapcsolat</p>
           <address class="contacts">
-            <p class="address">
-              Sződliget / Vác
-            </p>
+            <p class="address">Sződliget / Vác</p>
             <p>
               <a class="footer-link" href="tel:415-201-6370">+36 70 329 7957</a
               ><br />
