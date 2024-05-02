@@ -112,11 +112,6 @@
   align-self: center;
 }
 
-.about-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
-
 /**************************/
 /* FEATURES SECTION */
 /**************************/
@@ -157,13 +152,21 @@
   line-height: 1.8;
 }
 
+.about-description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  grid-column: span 3;
+}
+
 /**************************/
 /* GALLERY SECTION */
 /**************************/
 
-.section-gallery{
-    padding: 9.6rem 0;
-background-color: #ebf7ed;
+.section-gallery {
+  padding: 9.6rem 0;
+  background-color: #ebf7ed;
 }
 
 .gallery-img {
@@ -174,17 +177,15 @@ background-color: #ebf7ed;
   transition: all 0.4s;
 }
 
-.gallery-img:hover{
-   transform: scale(1.1);
-
+.gallery-img:hover {
+  transform: scale(1.1);
 }
 
 .grid-wrapper > div {
   display: flex;
   justify-content: center;
   align-items: center;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .grid-wrapper > div > img {
@@ -197,8 +198,8 @@ background-color: #ebf7ed;
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 200px;
-  grid-gap: 10px;
+  grid-auto-rows: 20rem;
+  grid-gap: 1rem;
   grid-auto-flow: dense;
 }
 
@@ -223,12 +224,12 @@ background-color: #ebf7ed;
   padding: 9.6rem 0;
 }
 
-.rental-description{
-   font-size: 1.8rem;
+.rental-description {
+  font-size: 1.8rem;
   line-height: 1.8;
 }
 
-.rental-img-box{
+.rental-img-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -264,7 +265,150 @@ background-color: #ebf7ed;
   z-index: -1;
 }
 
-
-.rental-img{
+.rental-img {
   width: 80%;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  /* top / right / bottom / left */
+  padding: 9.6rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #5fc171, #37b24d);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #103517;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(95, 193, 113, 0.349),
+      rgba(55, 178, 78, 0.349)
+    ),
+    url("../img/gallery/gallery-11.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form textarea,
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #ebf7ed;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  margin-top: 3.6rem;
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
