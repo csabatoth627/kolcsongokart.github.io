@@ -15,28 +15,35 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
     <title>Kolcsongokart.hu</title>
   </head>
   <body>
     <header class="header">
-      <a class="brand" href="#">
+      <a class="brand   alink" href="#">
         <img class="logo" alt="Kolcsongokart.hu logo" src="img/logo.png" />
         <p class="logo-name">KOLCSONGOKART.HU</p>
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Rólunk</a></li>
-          <li><a class="main-nav-link" href="#">Lehetőségek</a></li>
+          <li><a class="main-nav-link alink" href="#about">Rólunk</a></li>
+          <li><a class="main-nav-link alink" href="#features">Lehetőségek</a></li>
           <li>
-            <a class="main-nav-link" href="#">Galléria</a>
+            <a class="main-nav-link alink" href="#gallery">Galléria</a>
           </li>
-          <li><a class="main-nav-link" href="#">Bérlés</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Kapcsolat</a></li>
+          <li><a class="main-nav-link alink" href="#rental">Bérlés</a></li>
+          <li><a class="main-nav-link nav-cta alink" href="#cta">Kapcsolat</a></li>
         </ul>
       </nav>
 
-        <button class="btn-mobile-nav">
+      <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
@@ -52,8 +59,8 @@
               programot szervezni, akkor mindenképpen ajánljuk kiváló minőségű,
               pedállal hajtható gokartjainkat bérlésre!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Ajánlat Kérés</a>
-            <a href="#" class="btn btn--outline">Tudj meg többet &darr;</a>
+            <a href="#cta" class="btn btn--full margin-right-sm alink">Ajánlat Kérés</a>
+            <a href="#about" class="btn btn--outline alink">Tudj meg többet &darr;</a>
           </div>
           <div class="hero-img-box">
             <img
@@ -65,7 +72,7 @@
         </div>
       </section>
 
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <span class="subheading">Rólunk</span>
           <h2 class="heading-secondary">
@@ -110,7 +117,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="container center-text">
           <span class="subheading">Lehetőségek</span>
           <h2 class="heading-secondary">
@@ -158,7 +165,7 @@
         </div>
       </section>
 
-      <section class="section-gallery">
+      <section class="section-gallery" id="gallery">
         <div class="container">
           <span class="subheading">Galléria</span>
           <h2 class="heading-secondary">
@@ -242,7 +249,7 @@
         </div>
       </section>
 
-      <section class="section-rental">
+      <section class="section-rental" id="rental">
         <div class="container">
           <span class="subheading">Bérlés</span>
           <h2 class="heading-secondary">Magánszemélyeknek és cégeknek is!</h2>
@@ -291,12 +298,13 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
               <h2 class="heading-secondary">Kérj ajánlatot!</h2>
-              <form class="cta-form" name="sign-up" netlify>
+              <form class="cta-form" name="sign-up" >
+
                 <div>
                   <label for="full-name">Teljes név</label>
                   <input
@@ -353,7 +361,7 @@
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-coll">
-          <a class="brand" href="#">
+          <a class="brand alink" href="#">
             <img class="logo" alt="Kolcsongokart.hu logo" src="img/logo.png" />
             <p class="logo-name">KOLCSONGOKART.HU</p>
           </a>
@@ -361,7 +369,7 @@
             <li>
               <a
                 class="footer-link"
-                href="https://www.instagram.com/kolcsongokart.hu/?hl=en"
+                href="https://www.instagram.com/kolcsongokart.hu/?hl=hu"
                 ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
               ></a>
             </li>
